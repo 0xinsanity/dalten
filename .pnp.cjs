@@ -14,6 +14,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
+      "name": "@dalten/schemas",\
+      "reference": "workspace:packages/schemas"\
+    },\
+    {\
       "name": "email_classifier",\
       "reference": "workspace:services/email_classifier"\
     }\
@@ -22,6 +26,7 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@dalten/monorepo", ["workspace:."]],\
+    ["@dalten/schemas", ["workspace:packages/schemas"]],\
     ["email_classifier", ["workspace:services/email_classifier"]]\
   ],\
   "fallbackPool": [\
@@ -100,6 +105,10 @@ const RAW_RUNTIME_STATE =
     [\
       "@csstools/selector-specificity",\
       "virtual:c287e5be24be1bc193cd84d756a79f4bf4e8872fdd664ba06ce17828da31db649a1506b0e21caa3de6defb2a7f72a04b85690ad26bbf47b12a1aaed21cb23ad9#npm:3.0.0"\
+    ],\
+    [\
+      "@dalten/schemas",\
+      "workspace:packages/schemas"\
     ],\
     [\
       "@eslint-community/eslint-utils",\
@@ -2010,6 +2019,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
+    ["@dalten/schemas", [\
+      ["workspace:packages/schemas", {\
+        "packageLocation": "./packages/schemas/",\
+        "packageDependencies": [\
+          ["@dalten/schemas", "workspace:packages/schemas"],\
+          ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@eslint-community/eslint-utils", [\
       ["npm:4.4.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@eslint-community-eslint-utils-npm-4.4.0-d1791bd5a3-10c0.zip/node_modules/@eslint-community/eslint-utils/",\
@@ -3545,6 +3564,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./services/email_classifier/",\
         "packageDependencies": [\
           ["email_classifier", "workspace:services/email_classifier"],\
+          ["@dalten/schemas", "workspace:packages/schemas"],\
           ["@typescript-eslint/eslint-plugin", "virtual:9b1417db53319ef42d9396c7a23823eeed5dd292a46b09bd7fc5a17e3303ad11f0db6bfaf834674e6cc37816b14bd075280e4a07bb9fc299ba7d9fcca394bd82#npm:6.9.1"],\
           ["dotenv", "npm:16.3.1"],\
           ["eslint", "npm:8.52.0"],\

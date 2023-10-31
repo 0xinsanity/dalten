@@ -5,7 +5,8 @@
   "workspaces": [
     "frontend/**",
     "gateways/**",
-    "services/**"
+    "services/**",
+    "packages/**"
   ],
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "4.29.25",

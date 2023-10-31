@@ -240,6 +240,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dalten/schemas@workspace:*, @dalten/schemas@workspace:packages/schemas":
+  version: 0.0.0-use.local
+  resolution: "@dalten/schemas@workspace:packages/schemas"
+  dependencies:
+    typescript: "npm:latest"
+  languageName: unknown
+  linkType: soft
+
 "@eslint-community/eslint-utils@npm:^4.1.2, @eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -1408,6 +1416,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "email_classifier@workspace:services/email_classifier"
   dependencies:
+    "@dalten/schemas": "workspace:*"
     "@typescript-eslint/eslint-plugin": "npm:^6.4.0"
     dotenv: "npm:16.3.1"
     eslint: "npm:^8.0.1"
@@ -4655,7 +4664,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*":
+"typescript@npm:*, typescript@npm:latest":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
   bin:
@@ -4675,7 +4684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A*#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A*#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3Alatest#optional!builtin<compat/typescript>":
   version: 5.2.2
   resolution: "typescript@patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
